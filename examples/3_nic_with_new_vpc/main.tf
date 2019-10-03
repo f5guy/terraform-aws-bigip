@@ -124,8 +124,8 @@ module bigip {
 #
 locals {
   prefix            = "tf-aws-bigip"
-  region            = "us-east-2"
-  azs               = [format("%s%s", local.region, "a"), format("%s%s", local.region, "b")]
+  region            = "us-gov-west-1"
+  azs               = ["us-gov-west-1a", "us-gov-west-1b"]
   cidr              = "10.0.0.0/16"
   allowed_mgmt_cidr = "0.0.0.0/0"
   allowed_app_cidr  = "0.0.0.0/0"
